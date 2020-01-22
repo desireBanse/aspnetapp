@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: desirebanseaspnetapp 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: desirebanseaspnetapp 
+    spec:
+      containers:
+        - name: desirebanseaspnetapp 
+          image: oismbanseacr.azurecr.io/desirebanseaspnetapp
+          ports:
+          - containerPort: 80
