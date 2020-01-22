@@ -19,7 +19,7 @@ variables:
   imagePullSecret: 'oismbanseacr74a4-auth'
 
   # Agent VM image name
-  vmImageName: 'windows-latest'
+  vmImageName: 'vs2017-win2016'
   
 
 stages:
